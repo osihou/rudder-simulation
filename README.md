@@ -1,2 +1,2 @@
 # vertical-stabilizer
- Simulation of the Airbus 350 vertical stabilizer
+ Simulation of a Airbus 350 vertical stabilizer
