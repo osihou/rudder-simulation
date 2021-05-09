@@ -1,3 +1,4 @@
+% NACA 0012 CL
 function cl = NACA0012_Cl (alpha)   
 cza5 = -4.866741209 *10^(-7);
 cza4 = 1.30404838 *10^(-6);

@@ -1,3 +1,4 @@
+% NACA 0012 CD
 function cd = NACA0012_Cd(alpha)
 cxa5 = 0.000598309836584;
 cxa4 = 0.000371501618906;

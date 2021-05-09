@@ -1,3 +1,12 @@
+% Add to execution path
+addpath('geometry') 
+addpath('loads')
+addpath('actuator') 
+savepath pathdef.m
+
+% Clear variables and a screen.
+clear; close all; clc;
+
 %------GEOMETRY-----
 %SCA=0.5808;        % m
 y = 0.02323;        % m
@@ -13,7 +22,7 @@ delta = geometry(y, x, dx, delta0);
 
 clear y x delta0 x_min x_max;
 
-%------FORCES-------
+%------LOADS-------
 
 rho = 1.2255;   % kg/m^3
 S = 1.965;      % m^2
@@ -26,3 +35,15 @@ v = linspace(v_min, v_max, 100);
 Q = actuator_load(rho, S, delta, v);
 
 clear rho S v_min v_max;
+
+%-------ACTUATOR-----
+m_actuator = 0.1;    % weight of actuator
+K = 14;             % bulk modulus
+
+A1 = 0.000490864;   % Area 1 m^2
+A2 = 0.000038485;   % Area 2 m^2
+
+V01 = 6.87e-6;      % Volume 1 m^3
+V02 = 8.27417e-7;   % Volume 2 m^3
+
+
