@@ -27,8 +27,8 @@ clear y x delta0 x_min x_max;
 rho = 1.2255;   % kg/m^3
 S = 1.965;      % m^2
 
-v_min = 10;     % m/s
-v_max = 100;    % m/s
+v_min = 100;    % m/s
+v_max = 300;    % m/s
 
 v = linspace(v_min, v_max, 100);
 
@@ -37,13 +37,13 @@ Q = actuator_load(rho, S, delta, v);
 clear rho S v_min v_max;
 
 %-------ACTUATOR-----
-m_actuator = 0.1;    % weight of actuator
+m_actuator = 10000;    % weight of actuator
 K = 14;             % bulk modulus
 
 A1 = 0.000490864;   % Area 1 m^2
 A2 = 0.000038485;   % Area 2 m^2
 
-V01 = 6.87e-6;      % Volume 1 m^3
-V02 = 8.27417e-7;   % Volume 2 m^3
+V01 = 0.00000687;      % Volume 1 m^3
+V02 = 0.0000008274177;   % Volume 2 m^3
 
 
