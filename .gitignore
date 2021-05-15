@@ -1,4 +1,5 @@
 slprj
-.slxc
+*.slxc
 *.asv
 pathdef.m
+*.autosave
