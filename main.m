@@ -16,7 +16,7 @@ delta0 = 25.1;        % deg
 x_min=-0.00515061;  % m
 x_max=0.0146;       % m
 
-dx=(x_min:0.000005:x_max);
+dx=(x_min:0.000001:x_max);
 
 delta = geometry(y, x, dx, delta0);
 
