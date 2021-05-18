@@ -1,4 +1,14 @@
-% ACTUATOR LOAD
+% ACTUATOR LOAD function
+%
+%
+% Input:
+% rho - 
+% S - 
+% delta - 
+% v -
+%
+% Output:
+% Q - 
 function Q = actuator_load(rho, S, delta, v)
 
 fd = drag_force(rho, S);

@@ -1,3 +1,7 @@
+% RUDDER SIMULATION
+%
+%
+
 % Add to execution path
 addpath('geometry') 
 addpath('loads')
@@ -9,18 +13,18 @@ clear; close all; clc;
 
 %------GEOMETRY-----
 %SCA=0.5808;        % m
-y = 0.02323;        % m
-x = 0.04981;        % m
+yr = 0.02323;        % m
+xr = 0.04981;        % m
 delta0 = 25.1;        % deg
 
 x_min=-0.00515061;  % m
 x_max=0.0146;       % m
 
-dx=(x_min:0.000001:x_max);
+x =(x_min:0.000001:x_max);
 
-delta = geometry(y, x, dx, delta0);
+delta = geometry(yr, xr, x, delta0);
 
-clear y x delta0 x_min x_max;
+clear yr xr delta0 x_min x_max;
 
 %------LOADS-------
 

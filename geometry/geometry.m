@@ -1,9 +1,20 @@
-% GEOMETRY
-function deg = geometry(y, x, dx, delta0)
+% GEOMETRY function
+% Calculates something based on something
+%
+% Input:
+% delta0 - 
+% yr - 
+% xr -
+% x -
+% delta0 - 
+%
+% Output:
+% deg -
+function deg = geometry(yr, xr, x, delta0)
 
-delta0=delta0*pi/180; 
+delta0 = delta0*pi/180; 
 
-deg = arrayfun(@(dx) (atan(sqrt(x^2+y^2-(x-dx)^2)/(x-dx))-delta0)*180/pi , dx);
+deg = arrayfun(@(x) (atan(sqrt(xr^2+yr^2-(xr-x)^2)/(xr-x))-delta0)*180/pi , x);
 
 end
 
