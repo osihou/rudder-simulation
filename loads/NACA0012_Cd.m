@@ -2,10 +2,10 @@
 % Calculates drag coefficient from a given angle of attack.
 %
 % Input:
-% alpha - angle of attack
+% alpha - angle of attack [deg]
 %
 % Output:
-% cd - drag coefficient
+% cd - drag coefficient []
 function cd = NACA0012_Cd(alpha)
 
 % Approximation parameters

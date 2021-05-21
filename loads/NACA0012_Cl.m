@@ -2,10 +2,10 @@
 % Calculates lift coefficient from a given angle of attack.
 %
 % Input:
-% alpha - angle of attack
+% alpha - angle of attack [deg]
 %
 % Output:
-% cl - lift coefficient
+% cl - lift coefficient []
 function cl = NACA0012_Cl (alpha)   
 
 % Approximation parameters

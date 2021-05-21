@@ -2,13 +2,13 @@
 %
 %
 % Input:
-% rho - 
-% S - 
-% delta - 
-% v -
+% rho   - air density [kgm/m^3]
+% S     - rudder surface [m^2]
+% delta - angle of attack of the rudder [deg]
+% v     - velocity [m/s]
 %
 % Output:
-% Q - 
+% Q     - force [N]
 function Q = actuator_load(rho, S, delta, v)
 
 fd = drag_force(rho, S);
