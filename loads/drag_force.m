@@ -1,6 +1,5 @@
 % DRAG FORCE function
 %
-%
 % Input:
 % rho   - air density [kg/m^3]
 % S     - rudder surface [m^2]

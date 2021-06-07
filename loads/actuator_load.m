@@ -1,6 +1,5 @@
 % ACTUATOR LOAD function
 %
-%
 % Input:
 % rho   - air density [kgm/m^3]
 % S     - rudder surface [m^2]

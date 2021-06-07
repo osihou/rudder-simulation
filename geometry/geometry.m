@@ -1,5 +1,4 @@
 % GEOMETRY function
-% Calculates something based on something
 %
 % Input:
 % delta0 - [deg]
